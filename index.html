@@ -1,0 +1,42 @@
+<!-- 
+    Nirajan Mahara
+    February 28, 2024
+    C0921977
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="weather-form">
+      <input type="text" id="city-input" placeholder="Enter city name" required>
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="msg" id="error-msg"></div>
+  </div>
+  
+  <!-- Weather Cities dynamic from javascript -->
+  <div class="weather-container" id="weather-container">
+    <ul class="cities" id="cities-list"></ul>
+  </div>
+
+  <!-- Loading container -->
+  <div id="loading-container">
+    <img id="loading-gif" src="loading.gif" alt="Loading...">
+    <p id="loading-text">Loading...</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed and Developed by Nirajan Mahara (February 28, 2024, C0921977) | &copy; 2024 Weather App</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
